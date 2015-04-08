@@ -11,8 +11,8 @@ By the end of my term introductory course, I completed a final project in object
 
 ### System-Level and Networking
 During an intensive Operating Systems course, I completed large projects using:
-- File IO to [replicate the Unix `myar` command](https://github.com/tjsander/Portfolio/blob/master/assembly/myar)
-- Threads and forked processes in parallel computing project to [compute 100k+ twin prime numbers](https://github.com/tjsander/Portfolio/blob/master/assembly/multiproc_twinprime)
+- File IO to [replicate the Unix `myar` command](https://github.com/tjsander/Portfolio/blob/master/myar)
+- Threads and forked processes in parallel computing project to [compute 100k+ twin prime numbers](https://github.com/tjsander/Portfolio/blob/master/multiproc_twinprime)
 - Sockets and other network communications (which I expanded upon in a later networking project)
 
 Finally, I wrote an in-depth [comparison of multiprocessing methods in Win32 and POSIX.](http://tjsander.github.io/windows-api.html)
