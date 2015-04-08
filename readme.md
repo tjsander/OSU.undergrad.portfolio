@@ -11,8 +11,8 @@ By the end of my term introductory course, I completed a final project in object
 
 ### System-Level and Networking
 During an intensive Operating Systems course, I completed large projects using:
-- File IO to [replicate the Unix `myar` command](assembly/myar)
-- Threads and forked processes in parallel computing project to [compute 100k+ twin prime numbers](assembly/multiproc_twinprime)
+- File IO to [replicate the Unix `myar` command](https://github.com/tjsander/Portfolio/blob/master/assembly/myar)
+- Threads and forked processes in parallel computing project to [compute 100k+ twin prime numbers](https://github.com/tjsander/Portfolio/blob/master/assembly/multiproc_twinprime)
 - Sockets and other network communications (which I expanded upon in a later networking project)
 
 Finally, I wrote an in-depth [comparison of multiprocessing methods in Win32 and POSIX.](http://tjsander.github.io/windows-api.html)
@@ -36,8 +36,8 @@ Unlike approximately 95% of my peers, I loved learning MASM. Something about kno
 
 *The following examples depen on the Irvine32 library.*
 
-- [Prime number generator](assembly1.asm) and exercise in array usage.
-- [Implementation of input/output functionality](assembly2.asm) and string to integer conversion using recursive assembly processes.
+- [Prime number generator](https://github.com/tjsander/Portfolio/blob/master/assembly/assembly1.asm) and exercise in array usage.
+- [Implementation of input/output functionality](https://github.com/tjsander/Portfolio/blob/master/assembly/assembly2.asm) and string to integer conversion using recursive assembly processes.
 
 I am currently studying ARM assembly on the Raspberry Pi and hope to be working on the Pebble Time smartwatch platform soon.
 
@@ -47,7 +47,7 @@ I create simple, elegant, and user-friendly interfaces through mobile-first desi
 One early project I completed was [a time-relational "done and todo" list](http://web.engr.oregonstate.edu/~sandetra/final/demo.html).
 
 ### Database Design
-A complex relational [Pokemon database](http://web.engr.oregonstate.edu/~sandetra/pokedex/) including types, a strength/weakness chart, user accounts and matchup analysis. (See also: my [schema](pokedex-definition.sql) and [queries](pokedex-queries.sql).)
+A complex relational [Pokemon database](http://web.engr.oregonstate.edu/~sandetra/pokedex/) including types, a strength/weakness chart, user accounts and matchup analysis. (See also: my [schema](https://github.com/tjsander/Portfolio/blob/master/sql/pokedex-definition.sql) and [queries](https://github.com/tjsander/Portfolio/blob/master/sql/pokedex-queries.sql).)
 
 ### User Interface Design
 I completed a course in usability engineering, during which I designed and tested an [UI for pixel artitsts.](pixelator_design.pdf)
