@@ -1,0 +1,39 @@
+Travis J. Sanders
+sandetra@onid.oregonstate.edu
+CS344-400
+Homework #5
+
+prime_pthread
+-------------
+After my bit-array and twin prime finder was working as serial code, I moved 
+on to threads. I noticed in my debug output that the part of the program that 
+took the most time was not going through the array and finding twins, it was 
+filling in the bit array. When computing UINT_MAX, the program would hang on 
+prime number 2 for at least 10 seconds before moving on to 3, where it would 
+hang for about 6 seconds.
+
+I partitioned the work of setting multiples thread-after-thread as they 
+arrived at the newest discovered prime number. This way, threads which receive 
+larger numbers come back for new work faster than threads which are setting 
+smaller number multiples.
+
+I used CALLOC to be sure that the bit array was initialized as 0. After 
+entering the threaded function, all threads would counter a mutex lock. The 
+first thread to arrive would continue as prime number 2. I set the [2] bit so 
+that other threads wouldn't also stop at number 2 and set a global variable 
+updating the position of the sieve algorithm. Threads whose k value was less 
+than this number would be advanced to the new position[+1] before searching 
+the bit array for the next prime number.
+
+Setting the bit of a prime number while setting the bits of its multiples, 
+then un-setting the prime when finished acts as a kind of mutex. Combined with 
+the global variable, the threads do not seem to step on one another.
+
+prime_mproc
+-----------
+I partitioned the work in mproc the same way: threads take the next found 
+prime number and set all of that number's multiples. Instead of mutexes here
+I used a semaphore of 1, and stored the bit array and "topstack" placemark
+variable in shared memory.
+
+As expected, the mproc version runs slightly slower than the threaded version.

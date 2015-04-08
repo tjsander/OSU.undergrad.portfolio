@@ -1,0 +1,37 @@
+# Travis J. Sanders
+# sandetra@onid.oregonstate.edu
+# CS344-400
+# Homework #3 - Tests
+
+##### MY ADDITIONAL TESTS CAN BE RUN USING "make alltests" ######
+
+Tests required by the assignment run with "make tests"
+
+Tested trying to add files to a non-archive file. It went ahead 
+and appended text files to my makefile, so I added a boolean 
+function to check that the file is a valid archive. Added to all
+functions opening an archive.
+
+Tested trying to add files to already-existing archive. Archive
+was not passing validation. Culprit was WRONLY. Changed to RDWR.
+[ added testq1234512 ]
+
+Added tests for -x. (These tests added before mandatory section 4
+tests from the assignment to extract the 1-s.txt... from junk.a)
+	1. remove the two archives named "testx"
+	2. Extract junk.a using ar -xo, then ar q to a new archive. 
+	3. Extract junk.a and myar -x and myar -q to a new archive 
+	4. diff the resulting two files.
+(This also provides another layer of testing for -q)
+
+Testing -d, there is some unexpected output when deleting large
+numbers of files. Turned out to be a simple problem with evening 
+the bits out after deletion. Function now passes -d tests:
+	1. Create two ar files with same contents
+	2. Remove 2 and 4 using ar and myar, diff
+	3. Remove 3, diff
+
+For -A I simply ran the command in the current directory. I 
+checked that the filename did not match '.', '..', 'myar', 
+'sig_demo' (to avoid adding the binary files to the ar), as well
+as the name of the ar (to avoid an infinite loop).
