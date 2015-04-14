@@ -50,7 +50,7 @@ One early project I completed was [a time-relational "done and todo" list](http:
 A complex relational [Pokemon database](http://web.engr.oregonstate.edu/~sandetra/pokedex/) including types, a strength/weakness chart, user accounts and matchup analysis. (See also: my [schema](https://github.com/tjsander/Portfolio/blob/master/sql/pokedex-definition.sql) and [queries](https://github.com/tjsander/Portfolio/blob/master/sql/pokedex-queries.sql).)
 
 ### User Interface Design
-I completed a course in usability engineering, during which I designed and tested an [UI for pixel artitsts.](pixelator_design.pdf)
+I completed a course in usability engineering, during which I designed and tested a [UI for pixel artitsts.](pixelator_design.pdf)
 
 ## Java
 During my liberal arts studies at Willamette University I took intro and data structures coureses in Java. Most recently, I worked on a team of three to write a small JUnit test suite for the Apache Commons URL Validator.
