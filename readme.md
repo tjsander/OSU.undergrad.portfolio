@@ -13,7 +13,7 @@ By the end of my term introductory course, I completed a final project in object
 During an intensive Operating Systems course, I completed large projects using:
 - File IO to [replicate the Unix `myar` command](https://github.com/tjsander/Portfolio/blob/master/myar)
 - Threads and forked processes in parallel computing project to [compute 100k+ twin prime numbers](https://github.com/tjsander/Portfolio/blob/master/multiproc_twinprime)
-- Sockets and other network communications (which I expanded upon in a later networking project)
+- Sockets and other network communications (which I expanded upon in a later networking project to make a [FTP application in C++ and Python](https://github.com/tjsander/Portfolio/blob/master/ftp_sockets/))
 
 Finally, I wrote an in-depth [comparison of multiprocessing methods in Win32 and POSIX.](http://tjsander.github.io/windows-api.html)
 
@@ -28,7 +28,9 @@ Years before starting my Computer Science degree, with no prior experience in Py
 
 Since this experience, Python has become my weapon of choice for all projects without language requirements, especially those involving system operations.
 
-I used the Python Google App Engine API to create a [cloud address book.](http://brave-cursor-751.appspot.com/) 
+For a good example of my current Python skill level, see [the client-side of my FTP project.](https://github.com/tjsander/Portfolio/blob/master/ftp_sockets/ftclient.py)
+
+I used Python and the Google App Engine API to create a [cloud address book.](http://brave-cursor-751.appspot.com/) 
 
 ## x86 Assembly
 
